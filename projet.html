@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mes Projets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="projet.css">
+</head>
+<body>
+    <!-- Animation de fond -->
+    <div class="background-animation" id="backgroundAnimation"></div>
+    
+    <header>
+        <h1>Mes Projets</h1>
+        <ul class="nav-links">
+            <li><a href="accueil.html"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="apropos.html"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="competences.html" ><i class="fas fa-chart-bar"></i> Compétences</a></li>
+            <li><a href="#" class="active"><i class="fas fa-briefcase"></i> Projets</a></li>
+             <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    
+    </header>
+    
+    <div class="projects-container">
+        <p class="intro">
+            Voici deux projets en cours de réalisation dans le cadre de mon apprentissage en développement web.
+        </p>
+        
+        <!-- Filtres de projets -->
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">Tous</button>
+            <button class="filter-btn" data-filter="web">Développement Web</button>
+            <button class="filter-btn" data-filter="logistique">Logistique</button>
+        </div>
+
+        <div class="projects-grid">
+            <!-- Projet 1 -->
+            <div class="project-card" data-category="logistique">
+                <img src="image3.jpeg" alt="Projet 1">
+                <div class="project-content">
+                    <h3>LogiTrack</h3>
+                    <p>
+                        Tableau de bord intelligent pour la gestion des stocks
+                    </p>
+                    <a href="https://github.com/kadmiebihamleontine/logiTrack.git" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> Voir le projet
+                    </a>
+                </div>
+            </div>
+
+            <!-- Projet 2 -->
+            <div class="project-card" data-category="web">
+                <img src="image4.png" alt="Projet 2">
+                <div class="project-content">
+                    <h3>LevelUp Togo</h3>
+                    <p>
+                        Un site web qui permet l'orientation des jeunes Togolais avec un quiz intégré des formations certifiantes et des mentorats intégrés
+                    </p>
+                    <a href="https://github.com/kadmiebihamleontine/miab-hackatonMK.git" target="_blank" class="btn">
+                        <i class="fab fa-github"></i> Voir le projet
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Projet 3 (exemple supplémentaire) -->
+            <div class="project-card" data-category="web">
+                <img src="https://placehold.co/600x400/2ecc71/white?text=Portfolio" alt="Projet 3">
+                <div class="project-content">
+                    <h3>Portfolio Personnel</h3>
+                    <p>
+                        Mon portfolio personnel développé avec HTML, CSS et JavaScript pour présenter mes compétences et projets
+                    </p>
+                    <a href="#" class="btn">
+                        <i class="fas fa-external-link-alt"></i> Voir le projet
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="nav-button">
+        <button>
+            <a href="contact.html"><i class="fas fa-envelope"></i> Me contacter</a>
+        </button>
+    </div>
+    
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+    <script src="projet.js"></script>
+</body>
+</html>
