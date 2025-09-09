@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactez-moi</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <header>
+        <ul class="nav-links">
+            <li><a href="#" class="active"><i class="fas fa-home"></i> Accueil</a></li>
+            <li><a href="apropos.html"><i class="fas fa-user"></i> À propos</a></li>
+            <li><a href="competences.html"><i class="fas fa-chart-bar"></i> Compétences</a></li>
+            <li><a href="projet.html"><i class="fas fa-briefcase"></i> Projets</a></li>
+            <li><a href="contact.html"><i class="fas fa-envelope"></i> Contact</a></li>
+        </ul>
+    </header> 
+    <div class="background-animation" id="backgroundAnimation"></div>
+    
+    <div class="main-container">
+        <div class="contact-container" id="contactContainer">
+            <h1>Vous avez un projet en tête ?</h1>
+            <p class="subtitle">N’hésitez pas à me contacter</p>
+
+            <form class="contact-form" id="contactForm">
+                <div class="form-group">
+                    <label for="prenom">Votre prénom</label>
+                    <input type="text" id="prenom" name="prenom" placeholder="Votre prénom" required>
+                    <i class="fas fa-user"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="nom">Votre nom</label>
+                    <input type="text" id="nom" name="nom" placeholder="Votre nom" required>
+                    <i class="fas fa-signature"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="sujet">Votre sujet</label>
+                    <input type="text" id="sujet" name="sujet" placeholder="Votre sujet" required>
+                    <i class="fas fa-tag"></i>
+                </div>
+
+                <div class="form-group">
+                    <label for="objectif">Votre objectif d’un marché</label>
+                    <textarea id="objectif" name="objectif" placeholder="Décrivez votre objectif..." required></textarea>
+                    <i class="fas fa-bullseye"></i>
+                </div>
+
+                <div class="separator" id="separator"></div>
+
+                <button type="submit" class="submit-btn" id="submitBtn">Envoyer</button>
+            </form>
+        </div>
+    </div>
+    
+    <footer id="footer">
+        <div class="footer-left">
+            <p>Designed by <span class="signature">Léontine</span> with HTML CSS JS</p>
+        </div>
+        <div class="footer-right">
+            <p>Tous droits réservés - 2025</p>
+        </div>
+    </footer>
+    
+    <div class="theme-toggle" id="themeToggle">
+        <i class="fas fa-moon"></i>
+    </div>
+
+    <script src="contact.js"></script>
+</body>
+</html>
